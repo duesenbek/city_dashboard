@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Погода по городу</h1>
+    <form id="weather-form">
+      <input
+        type="text"
+        id="city-input"
+        placeholder="Введите город (например, Almaty)"
+        required
+      />
+      <button type="submit">Показать погоду</button>
+    </form>
+
+    <section id="weather-result" class="card hidden"></section>
+    <section id="news" class="card hidden"></section>
+    <section id="currency" class="card hidden"></section>
+
+    <div id="map" class="map"></div>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+  <script src="main.js"></script>
+</body>
+</html>
